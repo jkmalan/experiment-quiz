@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Currency Converter </title>
+        <script src = "ajax_currency.js"></script>
+    </head>
+
+    <body>
+        <form id = "currency_form">
+            <label>Supported currencies: EUR, USD, CAD, CHF, AUD </label> <br>
+
+            <input id = "amount" autocomplete="off" autofocus placeholder="Amount" type ="text">
+            <input id = "base_currency" autocomplete="off" autofocus placeholder="EUR" type ="text">
+            <input id = "to_currency" autocomplete="off" autofocus placeholder="USD" type ="text">
+            <input value = "convert"  type ="submit">
+        </form>
+        <br>
+        <div id = "result">
+
+        </div>
+
+    </body>
+</html>

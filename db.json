@@ -1,0 +1,23 @@
+{
+    "questions": [
+        {"id": 1, "title": "Horoscopes accurately predict future events 85% of the time", "answer": "false"},
+        {"id": 2, "title": "The National Weather Service will pay $30 for the rights to any original photograph of lightning", "answer": "false"},
+        {"id": 3, "title": "Apple is working on a solar-powered iPod. The only drawback is that the solar panels make the unit the size of a large pizza box.", "answer": "false"},
+        {"id": 4, "title": "David Bowie thinks he is being stalked by someone who is dressed like a giant pink rabbit.", "answer": "true"},
+        {"id": 5, "title": "During a nine month strike in 2002, the Weather Channel broadcast reruns.", "answer": "false"},
+        {"id": 6, "title": "It's against the law to slam your car door in Switzerland.", "answer": "true"},
+        {"id": 7, "title": "Owls are the only birds who can see the color blue.", "answer": "true"},
+        {"id": 8, "title": "Every time you lick a stamp, you're consuming 1/10 of a calorie.", "answer": "true"},
+        {"id": 9, "title": "Prior to the discovery of Penicillin in 1928, laughter really was the best medicine.", "answer": "false"},
+        {"id": 10, "title": "65% of Elvis impersonators are of Asian descent", "answer": "true"},
+        {"id": 11, "title": "The youngest pope was 11 years old.", "answer": "true"},
+        {"id": 12, "title": "Jimmy Carter once reported a UFO in Georgia.", "answer": "true"},
+        {"id": 13, "title": "Before coming to power, Slobodan Milosevic hosted a radio talk show about soccer", "answer": "false"}
+
+    ],
+    "answer_choices":[
+        {"choice_1": "true"},
+        {"choice_2": "false"}
+    ]
+
+}

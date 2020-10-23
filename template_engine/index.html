@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="view_script.js"></script>
+  </head>
+  <body>
+      <div>
+        <ul>
+          <li onclick="render_view('#post_view1',0)"> <span>Prof. One</span> </li>
+          <li onclick="render_view('#post_view1',1)"> <span>Prof. Two</span> </li>
+          <li onclick="render_view('#post_view1',2)"> <span>Prof. Three</span> </li>
+          <li onclick="render_view('#post_view2',0)"> <span>Prof. Four </span> </li>
+        </ul>
+
+      </div>
+      <div id="view_widget">
+      </div>
+  </body>
+
+  <!-- include the views -->
+  <script id="post_view1" type="text/x-handlebars-template">
+    <div class="card-body">
+      <h4 class="card-title">{{name}}</h4>
+      <p class="card-text">{{expertise}}</p>
+      <a href="{{profile}}" class="btn btn-primary">See Profile</a>
+    </div>
+  </script>
+
+
+  <script id="post_view2" type="text/x-handlebars-template">
+    <div class="card-body">
+      <h4 class="card-title" style="color:red;">{{name}}</h4>
+      <p class="card-text">{{expertise}}</p>
+      <a href="{{profile}}" class="btn btn-primary">See Profile</a>
+    </div>
+  </script>
+</html>
