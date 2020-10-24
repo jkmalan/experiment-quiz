@@ -17,8 +17,9 @@
         <form id = "name_form">
             <label>Please enter your name </label> <br>
             <input id = "name" autocomplete="off" autofocus placeholder="Name" type ="text">
-            <input id = "quiz_1" type ="radio" value = "quiz_1" name = "quiz_1">
-            <input id = "quiz_2" type ="radio" value = "quiz_2" name = "quiz_2">
+            <label for = "quiz-selection">Select your quiz</label>
+            <input class = "quiz-selection" id = "quiz_1" type ="radio" value = "quiz_1" name = "quiz_1">Quiz 1
+            <input class = "quiz-selection" id = "quiz_2" type ="radio" value = "quiz_2" name = "quiz_2">Quiz 2
             <input value = "quiz_start"  type ="submit">
         </form>
 
@@ -56,10 +57,10 @@
                             <div class = "card" style = "width:350px">
                                 <h4 class = "text-center"> Question</h4>
                                 <div class = "card-body">
-                                    <h4 class = "card-title"> {{this.results.0.name.title}} {{this.results.0.name.first}} {{this.results.0.name.last}}</h4>
+                                    <h4 class = "card-title"> {{this.questions.title}}</h4>
                                 <div>
-                                  <button class = "btn btn-primary pull-left" data-vote = "hire">Hire</button>
-                                  <button class = "btn btn-danger float-right" data-vote = "fire">Fire</button>
+                                  <button class = "btn btn-primary pull-left" data-vote = "true">True</button>
+                                  <button class = "btn btn-danger float-right" data-vote = "false">False</button>
                                 </div>
                             </div>
                         </div>

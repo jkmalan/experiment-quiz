@@ -6,39 +6,55 @@ const appState = {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  create_user_view(1)
+    document.querySelector("#name_form").onsubmit = (e) => {
+        handle_form(e)
+    }
+  //create_question_view()
 
   document.querySelector("#app_widget").onclick = (e) => {
       handle_vote(e)
   }
 });
 
-const handle_vote = (e) => {
-    console.log(e.target)
-    if (e.target.dataset.vote == "hire"){
-        //console.log("hire")
-        appState.current_hire +=1 
-        create_user_view(1)
-    } else if (e.target.dataset.vote == "fire"){
-        //console.long("fire")
-        appState.current_fire +=1
-        create_user_view(1)
+
+const handle_form = (e) => {
+    var name = document.querySelector("#name").value;
+    var quiz_selection = document.querySelector("#quiz-selection").value;
+    alert('hello' + name + "you chose" + quiz_selection);
+    if (quiz_selection == "quiz_1"){
+        create_question_view()
+    }
+    else if (quiz_selection == "quiz_2"){
+        create_question_view()
     }
 
-    if (appState.current_hire - appState.current_fire < 0){
-        alert("Restart")
-        appState.current_hire = 0;
-        appState.current_fire = 0;
+}
+const handle_vote = (e) => {
+    console.log(e.target)
+    if (e.target.dataset.vote == "true"){
+        //console.log("hire")
+        appState.current_correct +=1 
+        create_question_view()
+    } else if (e.target.dataset.vote == "false"){
+        //console.long("fire")
+        appState.current_wrong +=1
+        create_question_view()
+    }
+
+    if (appState.current_correct=10){
+        alert("10 correct, Restart")
+        appState.current_correct = 0;
+        appState.current_wrong = 0;
     }
     
 }
 
 
-const create_user_view = async (user_idx) => {
+const create_question_view = async () => {
 
-    const data = await fetch ("https://randomuser.me/api/?results=1")
+    const data = await fetch ("https:/my-json-server.typicode.com/gracelamalva/CUS1172_Project3")
     const model = await data.json()
-    const html_element = render_widget(model, '#user_view')
+    const html_element = render_widget(model, '#question_view')
     document.querySelector("#app_widget").innerHTML = html_element;
 }
 
