@@ -32,11 +32,11 @@ const handle_form = (e) => {
 const handle_vote = (e) => {
     console.log(e.target)
     if (e.target.dataset.vote == "true"){
-        //console.log("hire")
+       
         appState.current_correct +=1 
         create_question_view()
     } else if (e.target.dataset.vote == "false"){
-        //console.long("fire")
+        
         appState.current_wrong +=1
         create_question_view()
     }

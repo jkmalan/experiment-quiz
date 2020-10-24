@@ -1,4 +1,5 @@
 {
+    
     "questions": [
         {"id": 1, "title": "Horoscopes accurately predict future events 85% of the time", "answer": "false"},
         {"id": 2, "title": "The National Weather Service will pay $30 for the rights to any original photograph of lightning", "answer": "false"},
@@ -12,7 +13,14 @@
         {"id": 10, "title": "65% of Elvis impersonators are of Asian descent", "answer": "true"},
         {"id": 11, "title": "The youngest pope was 11 years old.", "answer": "true"},
         {"id": 12, "title": "Jimmy Carter once reported a UFO in Georgia.", "answer": "true"},
-        {"id": 13, "title": "Before coming to power, Slobodan Milosevic hosted a radio talk show about soccer", "answer": "false"}
+        {"id": 13, "title": "Before coming to power, Slobodan Milosevic hosted a radio talk show about soccer", "answer": "false"},
+        {"id": 14, "title": "More than 8,100 US troops are still listed as missing in action from the Korean war.", "answer": "true"},
+        {"id": 15, "title": "A starfish can turn its stomach inside out.", "answer": "true"},
+        {"id": 16, "title": "Jim Carrey voted in 2004 at the Beverly Hills City Hall. He had an assistant wait in line for him, however", "answer": "true"},
+        {"id": 17, "title": "A starfish can turn its stomach inside out.", "answer": "true"},
+        {"id": 18, "title": "Studies show newborns will recognize their mother's face more readily if their mother wears glasses..", "answer": "false"},
+        {"id": 19, "title": "90% of Canada's 31,000,000 citizens live within 100 miles of the U.S. border.", "answer": "true"},
+        {"id": 20, "title": "After you die, your tongue continues to grow.", "answer": "false"}
 
     ],
     "answer_choices":[
